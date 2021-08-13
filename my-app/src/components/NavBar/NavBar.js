@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import GroupsIcon from "../../icons/group.svg";
+import { ReactComponent as GroupsIcon } from "../../icons/group.svg";
 
 function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar_content">
-        <img src={GroupsIcon}></img>
+        <GroupsIcon fill="#2081C3" />
         <span>USERS</span>
       </div>
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 3px 6px rgb(155, 155, 155);
+  box-shadow: 0px 2px 6px rgb(155, 155, 155);
 }
 
 .navbar_content {
@@ -11,9 +11,6 @@
   align-items: center;
   justify-content: space-between;
   width: 90px;
-  font-size: 20px;
-}
-
-.navbar_content > img {
-  fill: #2081c3;
+  font-size: 18px;
+  color: #4a4a4a;
 }
