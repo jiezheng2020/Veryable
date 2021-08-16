@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 16px;
 }
 .user_card {
   margin-top: 16px;
