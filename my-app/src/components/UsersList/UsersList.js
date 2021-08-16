@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ReactComponent as UserLogo } from "../../icons/user.svg";
 import { ReactComponent as UserExpand } from "../../icons/expand_more.svg";
 import { ReactComponent as UserShrink } from "../../icons/expand_less.svg";
-
+import getDate from "../../utils/getDate";
 import UserData from "../../data/users.json";
 import "./UsersList.css";
 
@@ -15,23 +15,6 @@ function UsersList() {
 
   const handleShrink = () => {
     setactiveUser(null);
-  };
-
-  const getDate = (date) => {
-    let newDate = new Date(date);
-    let month = newDate.getUTCMonth() + 1;
-    let day = newDate.getDate().toString();
-    let year = newDate.getFullYear().toString().slice(2);
-    let hour = newDate.getUTCHours();
-    let minutes = newDate.getUTCMinutes();
-    let abbr = "AM";
-
-    if (minutes < 10) minutes = `0${minutes.toString()}`;
-    if (hour > 12) {
-      hour = hour - 12;
-      abbr = "PM";
-    }
-    return `${month}/${day}/${year} ${hour}:${minutes} ${abbr}`;
   };
 
   return (
