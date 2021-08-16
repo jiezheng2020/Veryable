@@ -7,8 +7,76 @@
 }
 .user_card {
   margin: 16px 12px;
-  box-shadow: 2px 2px 6px rgb(155, 155, 155);
+  box-shadow: 1px 2px 2px rgb(155, 155, 155);
+  border: 1px solid rgba(155, 155, 155, 0.5);
   width: 100%;
   display: flex;
+  flex-direction: column;
   min-height: 80px;
+}
+
+.user_card_shown {
+  display: flex;
+  padding: 20px 16px;
+  justify-content: space-between;
+}
+
+.user_card_left {
+  display: flex;
+}
+
+.user_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user_name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.user_email {
+  font-size: 10px;
+  color: #7e7e7e;
+}
+
+.user_role {
+  font-size: 10px;
+  color: #4a4a4a;
+}
+
+.svg_user {
+  width: 45px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.svg_symbols {
+  fill: #7e7e7e;
+  width: auto;
+  height: 27px;
+}
+.user_card_hidden {
+  margin-left: 76px;
+  padding: 10px 0 20px 0;
+  height: fit-content;
+  display: none;
+}
+
+.expanded {
+  display: block;
+}
+
+.detail_header {
+  font-weight: bold;
+  font-size: 10px;
+  color: #4a4a4a;
+}
+
+.detail_item {
+  font-size: 10px;
+  color: #4a4a4a;
+  margin-bottom: 10px;
 }
