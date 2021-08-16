@@ -57,6 +57,12 @@
   fill: #7e7e7e;
   width: auto;
   height: 27px;
+  opacity: 0.8;
+}
+
+.svg_symbols:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 .user_card_hidden {
   margin-left: 76px;
